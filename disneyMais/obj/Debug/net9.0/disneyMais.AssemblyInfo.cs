@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("disneyMais")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f8a2772833445921ceff99379588b10fa069032")]
 [assembly: System.Reflection.AssemblyProductAttribute("disneyMais")]
 [assembly: System.Reflection.AssemblyTitleAttribute("disneyMais")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
