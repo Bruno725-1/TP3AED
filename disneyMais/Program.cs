@@ -16,19 +16,88 @@ class Program {
         {
             string[] comandos = Console.ReadLine().Split(' ');
             string comando = comandos[0];
-            string parametro = comandos[1];
             if (comando == "push")
             {
-                //codigo aqui
-                for (int j = 0; j < producoes.Count; j++)
+                if (int.TryParse(comandos[1], out int parametro))
                 {
-                    
+                    //percorrer a lista para verificar quais filmes foram lançados naquele ano
+                    for (int j = 0; j < producoes.Count; j++)
+                    {
+                        if (producoes[j].release_year == parametro)
+                            pilha.Push(producoes[j]);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < producoes.Count; j++)
+                    {
+                        if (producoes[j].type == comandos[1])
+                            pilha.Push(producoes[j]);
+                    }
+                }
+            }
+            else if (comando == "queue")
+            {
+                if (int.TryParse(comandos[1], out int parametro))
+                {
+                    for (int j = 0; j < producoes.Count; j++)
+                    {
+                        if (producoes[j].release_year == parametro)
+                            fila.Enqueue(producoes[j]);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < producoes.Count; j++)
+                    {
+                        if (producoes[j].type == comandos[1])
+                            fila.Enqueue(producoes[j]);
+                    }
+                }
+            }
+            else if (comando == "pop")
+            {
+                if (int.TryParse(comandos[1], out int parametro))
+                {
+                    for (int j = 0; j < parametro; j++)
+                    {
+                        Producao p = pilha.Pop();
+                        Console.WriteLine(p.ToStringFormatado());
+                    }
+                }
+                else
+                {
+                    while (pilha.Count > 0)
+                    {
+                        Producao p = pilha.Pop();
+                        Console.WriteLine(p.ToStringFormatado());
+                    }
+                }
+            }
+            else
+            {
+                if (int.TryParse(comandos[1], out int parametro))
+                {
+                    for (int j = 0; j < parametro; j++)
+                    {
+                        Producao p = fila.Dequeue();
+                        Console.WriteLine(p.ToStringFormatado());
+                    }
+                }
+                else
+                {
+                    while (pilha.Count > 0)
+                    {
+                        Producao p = fila.Dequeue();
+                        Console.WriteLine(p.ToStringFormatado());
+                    }
                 }
             }
         }
     }
 }
-class Producao {
+class Producao
+{
     //atributos aqui
     public string show_id;
     public string type;
@@ -43,7 +112,8 @@ class Producao {
     public string listed_in;
     public string description;
     //função construtora
-    public Producao(string[] producao) {
+    public Producao(string[] producao)
+    {
         this.show_id = producao[0];
         this.type = producao[1];
         this.title = producao[2];
@@ -56,5 +126,13 @@ class Producao {
         this.duration = producao[9];
         this.listed_in = producao[10];
         this.description = producao[11];
+    }
+    public static string ChangeData(string data)
+    {
+        string[] vetor = data.Split(",", ", ");
+    }
+    public string ToStringFormatado()
+    {
+        return $"{show_id};{type};{title};{director};{cast};{country};{ChangeData(date_added)};{release_year};{rating};{duration};{listed_in};{description}";
     }
 }
