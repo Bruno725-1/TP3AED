@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 class Program {
     static void Main (string[] args) {
-        Console.WriteLine("Off the king the power demanded the bastard, the king the ferry goes ma");
         int n = int.Parse(Console.ReadLine());
-        List<Producao> producoes = new List<Producao>();
-        for (int i = 0; i < n; i++) {
+        Producao[] producoes = new Producao[n];
+        for (int i = 0; i < n; i++)
+        {
             string[] producao = Console.ReadLine().Split(';');
-            producoes.Add(new Producao(producao));
+            producoes[i] = new Producao(producao);
+            producoes[i].date_added = Producao.ChangeData(producoes[i].date_added);
         }
         int c = int.Parse(Console.ReadLine());
         Queue<Producao> fila = new Queue<Producao>();
@@ -129,7 +131,8 @@ class Producao
     }
     public static string ChangeData(string data)
     {
-        string[] vetor = data.Split(",", ", ");
+        DateTime dt = DateTime.Parse(data, System.Globalization.CultureInfo.InvariantCulture);
+        return dt.ToString("dd/MM/yyyy");
     }
     public string ToStringFormatado()
     {
