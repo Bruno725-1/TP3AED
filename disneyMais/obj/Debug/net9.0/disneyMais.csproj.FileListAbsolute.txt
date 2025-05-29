@@ -1,0 +1,15 @@
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.AssemblyInfo.cs
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.sourcelink.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\bin\Debug\net9.0\disneyMais.exe
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\bin\Debug\net9.0\disneyMais.deps.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\bin\Debug\net9.0\disneyMais.runtimeconfig.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\bin\Debug\net9.0\disneyMais.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\bin\Debug\net9.0\disneyMais.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\refint\disneyMais.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\disneyMais.genruntimeconfig.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disneyMais\obj\Debug\net9.0\ref\disneyMais.dll

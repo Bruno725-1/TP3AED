@@ -1,0 +1,62 @@
+Deu a Louca no Disney+
+
+Loki, cansado de pregar peças na TVA, roubou um artefato mágico da Wanda e sem querer abriu portais entre todos os mundos do Disney+!
+De repente:
+• The Mandalorian apareceu em Encanto, confundindo Casita com uma nave viva.
+• Simba virou conselheiro real de Aladdin em Agrabah.
+• Bela e a Fera passaram a morar na mesma casa da família Madrigal — e a Casita adorou o novo hóspede peludo.
+• Grogu fugiu montado num tapete voador, espalhando caos enquanto mastigava flores mágicas.
+• Wanda tentava organizar tudo com feitiços... mas acabava transformando tapetes em camelos e camelos em gelatinas gigantes.
+
+Para tentar organizar esse multiverso doidão, Disney+ precisa de você ! Eis a sua missão:
+
+Entrada:
+
+A primeira linha de entrada contém um único inteiro N (1 ≤ N ≤ 1000), indicando a quantidade de produções Disney+
+A seguir virão N linhas contendo cada uma diversas informações, separada por ponto-e-vírgula. Você deve ler e organizar em memória essas informações de acordo com o seguinte layout:
+
+                                                                           
+Campo
+Tipo de Dado
+show_id
+string
+type
+string
+title
+string
+director
+string
+cast
+string
+country
+string
+date_added
+string
+release_year
+int
+rating
+string
+duration
+string
+listed_in
+string
+description
+string
+
+A seguir virão C linhas contendo cada uma comandos para organizar esses dados da seguinte forma:
+[comando] [parâmetro]
+onde [comando] pode ser:
+• push
+• pop
+• queue
+• dequeue
+
+e [parâmetro] pode ser: numérico ou string
+para os comandos: push e queue se o [parâmetro] for numérico todos os registros carregados cujo Ano seja igual a este valor deverão ir para as respectivas estruturas (você já quai são, né ?); caso contrário o campo de tipo de produção é o que deverá ser selecionado.
+
+Saída:
+
+A saída será gerada pelos comandos pop e dequeue
+para estes comandos, se o [parâmetro] for numérico deverão ser removidos da estrutura e impressos a quantidade de registros indicada por este valor; caso contrário deverá ser a palavra all, indicando que todos os elementos desta estrutura deverão ser retirados e impressos na saída com o mesmo formato que foram lidos.
+
+Ao imprimir esses registros só deverá ser feita uma alteração alteração em relação à entrada: o campo de data deverá ser convertido para o formato dd/mm/aaaa

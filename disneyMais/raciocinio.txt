@@ -1,8 +1,0 @@
-Push e Pop:
-Se o parâmetro for numérico, todas as produções daquele ano deverão ser selecionadas e ir para as estruturas de dados. Se não, as produções deverão ser selecionadas pelo tipo e adicionadas às estruturas.
-Dequeue e Pop: 
-Se o parâmetro for numérico, deverá ser removida das estruturas a quantidade de itens especificada e impressa na tela. Caso contrário, será a palavra all, indicando que as estruturas deverão ser resetadas e impressas.
-O que o programa deve fazer agora?
-Ler os comandos, parâmetros e fazer o que foi especificado, mas como fazer isso?
-Acho que posso fazer um switch case para os comandos e ifs para os parâmetros.
-Declararei variáveis para os parâmetros, iniciando-as como strings. Se a converção para número funcionar, poderei selecionar as produções daquele ano a partir daí.

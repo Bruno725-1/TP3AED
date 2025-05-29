@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Globalization;
 using System.Collections.Generic;
-class Program {
-    static void Main (string[] args) {
+class Program
+{
+    static void Main(string[] args)
+    {
         int n = int.Parse(Console.ReadLine());
         Producao[] producoes = new Producao[n];
         for (int i = 0; i < n; i++)
@@ -22,8 +24,8 @@ class Program {
             {
                 if (int.TryParse(comandos[1], out int parametro))
                 {
-                    //percorrer a lista para verificar quais filmes foram lançados naquele ano
-                    for (int j = 0; j < producoes.Count; j++)
+                    //percorrer o vetor para verificar quais filmes foram lançados naquele ano
+                    for (int j = 0; j < producoes.Length; j++)
                     {
                         if (producoes[j].release_year == parametro)
                             pilha.Push(producoes[j]);
@@ -31,7 +33,7 @@ class Program {
                 }
                 else
                 {
-                    for (int j = 0; j < producoes.Count; j++)
+                    for (int j = 0; j < producoes.Length; j++)
                     {
                         if (producoes[j].type == comandos[1])
                             pilha.Push(producoes[j]);
@@ -42,7 +44,7 @@ class Program {
             {
                 if (int.TryParse(comandos[1], out int parametro))
                 {
-                    for (int j = 0; j < producoes.Count; j++)
+                    for (int j = 0; j < producoes.Length; j++)
                     {
                         if (producoes[j].release_year == parametro)
                             fila.Enqueue(producoes[j]);
@@ -50,7 +52,7 @@ class Program {
                 }
                 else
                 {
-                    for (int j = 0; j < producoes.Count; j++)
+                    for (int j = 0; j < producoes.Length; j++)
                     {
                         if (producoes[j].type == comandos[1])
                             fila.Enqueue(producoes[j]);
@@ -88,7 +90,7 @@ class Program {
                 }
                 else
                 {
-                    while (pilha.Count > 0)
+                    while (fila.Count > 0)
                     {
                         Producao p = fila.Dequeue();
                         Console.WriteLine(p.ToStringFormatado());
@@ -106,7 +108,7 @@ class Producao
     public string title;
     public string director;
     public string cast;
-    public string country;
+    public string lengthry;
     public string date_added;
     public int release_year;
     public string rating;
@@ -121,7 +123,7 @@ class Producao
         this.title = producao[2];
         this.director = producao[3];
         this.cast = producao[4];
-        this.country = producao[5];
+        this.lengthry = producao[5];
         this.date_added = producao[6];
         this.release_year = int.Parse(producao[7]);
         this.rating = producao[8];
@@ -131,11 +133,33 @@ class Producao
     }
     public static string ChangeData(string data)
     {
-        DateTime dt = DateTime.Parse(data, System.Globalization.CultureInfo.InvariantCulture);
-        return dt.ToString("dd/MM/yyyy");
+        DateTime dt;
+        // Tenta parsear como "MMMM d, yyyy" (ex.: September 24, 2021)
+        if (DateTime.TryParseExact(data,
+            "MMMM d, yyyy",
+            System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None,
+            out dt))
+        {
+            return dt.ToString("dd/MM/yyyy");
+        }
+        // Tenta parsear como "dd/MM/yyyy"
+        else if (DateTime.TryParseExact(data,
+            "dd/MM/yyyy",
+            System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None,
+            out dt))
+        {
+            return dt.ToString("dd/MM/yyyy");
+        }
+        else
+        {
+            // Se não conseguir parsear, retorna como está
+            return data;
+        }
     }
     public string ToStringFormatado()
     {
-        return $"{show_id};{type};{title};{director};{cast};{country};{ChangeData(date_added)};{release_year};{rating};{duration};{listed_in};{description}";
+        return $"{show_id};{type};{title};{director};{cast};{lengthry};{ChangeData(date_added)};{release_year};{rating};{duration};{listed_in};{description}";
     }
 }
