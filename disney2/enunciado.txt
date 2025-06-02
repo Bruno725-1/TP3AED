@@ -1,0 +1,78 @@
+Continua a Doideira do Disney# (agora ++/++)
+
+
+Agora a doideira generalizou !
+
+ sua missão agora será: Assumir o controle do Arquiuniverso Encantado da Disney+ (AED+), uma sala secreta escondida nos bastidores de "High School Musical", onde artefatos mágicos, sabres de luz, poções encantadas e controle remoto universal são armazenados.
+
+Você deve montar uma equipe de heróis e vilões (sim, alguns vilões também querem suas realidades de volta!) para:
+
+Encontrar Loki, que desapareceu após se transformar em um Olaf gigante e confundir Arendelle com uma praia de Miami.
+
+Recuperar o artefato mágico da Wanda, atualmente nas mãos do Stitch, que o acha um brinquedo e o usou para clonar cem versões falantes de si mesmo.
+
+Restaurar os personagens aos seus mundos de origem, sem apagar as amizades e confusões incríveis que eles fizeram entre si — afinal, quem não quer ver o Tio Scrooge negociando com piratas de “Piratas do Caribe”?
+
+Evitar que Darth Vader descubra a tecnologia da Casita, pois ele quer usá-la para construir uma Estrela da Morte viva e dançante.
+
+Impedir que Grogu coma o último “arequipe encantado” da Colômbia mágica, capaz de colapsar ou estabilizar todos os portais ao mesmo tempo, dependendo de quem o come.
+
+Mas cuidado: cada nova ação pode abrir ainda mais portais — e não queremos o Mickey encontrando Deadpool por acidente... ou queremos?
+
+E que a magia (ou a bagunça) esteja com você!
+
+Eis a sua missão (na verdade bem parecida com a anterior):
+Mas desta vez você deverá usar as classes mágicas fornecidas pelo Mestre dos mestres (ou seria o Doutor dos mestres?) - o professor da Teoria !
+
+Traduzindo para o Klingon: %S#e% &vo(c)ê !u@s#a$r^ Stack<> ou Queue<>, &tá- +l-a\s[c{a]d}o !!!
+
+Entrada:
+
+A primeira linha de entrada contém um único inteiro N (1 ≤ N ≤ 1000), indicando a quantidade de produções Disney+
+A seguir virão N linhas contendo cada uma diversas informações, separada por ponto-e-vírgula. Você deve ler e organizar em memória essas informações de acordo com o seguinte layout:
+
+                                                                           
+Campo
+Tipo de Dado
+show_id
+string
+type
+string
+title
+string
+director
+string
+cast
+string
+country
+string
+date_added
+string
+release_year
+int
+rating
+string
+duration
+string
+listed_in
+string
+description
+string
+
+A seguir virão C linhas contendo cada uma comandos para organizar esses dados da seguinte forma:
+[comando] [parâmetro]
+onde [comando] pode ser:
+• push
+• pop
+• queue
+• dequeue
+
+e [parâmetro] pode ser: numérico ou string
+para os comandos: push e queue se o [parâmetro] for numérico todos os registros carregados cujo Ano seja igual a este valor deverão ir para as respectivas classes (você já quais são, né ?); caso contrário o campo de tipo de produção é o que deverá ser selecionado.
+
+Saída:
+
+A saída será gerada pelos comandos pop e dequeue
+para estes comandos, se o [parâmetro] for numérico deverão ser removidos da estrutura e impressos a quantidade de registros indicada por este valor; caso contrário deverá ser a palavra all, indicando que todos os elementos desta estrutura deverão ser retirados e impressos na saída com o mesmo formato que foram lidos.
+
+Ao imprimir esses registros só deverá ser feita uma alteração alteração em relação à entrada: o campo de data deverá ser convertido para o formato dd/mm/aaaa

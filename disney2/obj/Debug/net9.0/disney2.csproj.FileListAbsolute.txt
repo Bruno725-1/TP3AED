@@ -1,0 +1,15 @@
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\bin\Debug\net9.0\disney2.exe
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\bin\Debug\net9.0\disney2.deps.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\bin\Debug\net9.0\disney2.runtimeconfig.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\bin\Debug\net9.0\disney2.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\bin\Debug\net9.0\disney2.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.AssemblyInfo.cs
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.sourcelink.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\refint\disney2.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\disney2.genruntimeconfig.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP3AED\disney2\obj\Debug\net9.0\ref\disney2.dll
