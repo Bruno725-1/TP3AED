@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("disney2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e29f8db5e16ce4b1bc65ad62b8068d3c921ed76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db40924a82818ea7696c1cfafe3a0d6c57a80d9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("disney2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("disney2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

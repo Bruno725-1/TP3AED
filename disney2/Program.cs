@@ -118,48 +118,35 @@ class Producao
     //função construtora
     public Producao(string[] producao)
     {
-        this.show_id = producao[0];
-        this.type = producao[1];
-        this.title = producao[2];
-        this.director = producao[3];
-        this.cast = producao[4];
-        this.lengthry = producao[5];
-        this.date_added = producao[6];
-        this.release_year = int.Parse(producao[7]);
-        this.rating = producao[8];
-        this.duration = producao[9];
-        this.listed_in = producao[10];
-        this.description = producao[11];
+        show_id = producao[0];
+        type = producao[1];
+        title = producao[2];
+        director = producao[3];
+        cast = producao[4];
+        lengthry = producao[5];
+        date_added = producao[6];
+        release_year = int.Parse(producao[7]);
+        rating = producao[8];
+        duration = producao[9];
+        listed_in = producao[10];
+        description = producao[11];
     }
+
     public static string ChangeData(string data)
     {
-        DateTime dt;
-        // Tenta parsear como "MMMM d, yyyy" (ex.: September 24, 2021)
-        if (DateTime.TryParseExact(data,
-            "MMMM d, yyyy",
-            System.Globalization.CultureInfo.InvariantCulture,
-            System.Globalization.DateTimeStyles.None,
-            out dt))
+        try
         {
+            DateTime dt = DateTime.Parse(data, System.Globalization.CultureInfo.InvariantCulture);
             return dt.ToString("dd/MM/yyyy");
         }
-        // Tenta parsear como "dd/MM/yyyy"
-        else if (DateTime.TryParseExact(data,
-            "dd/MM/yyyy",
-            System.Globalization.CultureInfo.InvariantCulture,
-            System.Globalization.DateTimeStyles.None,
-            out dt))
+        catch
         {
-            return dt.ToString("dd/MM/yyyy");
-        }
-        else
-        {
-            // Se não conseguir parsear, retorna como está
-            return data;
+            return data; // se der erro, retorna a data como veio
         }
     }
+
     public string ToStringFormatado()
     {
-        return $"{show_id};{type};{title};{director};{cast};{lengthry};{ChangeData(date_added)};{release_year};{rating};{duration};{listed_in};{description}";
+        return $"{show_id};{type};{title};{director};{cast};{lengthry};{date_added};{release_year};{rating};{duration};{listed_in};{description}";
     }
 }
